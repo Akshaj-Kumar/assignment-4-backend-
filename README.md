@@ -44,13 +44,19 @@ All URLs below use `http://localhost:5000`.
 |---|---|---|---|
 | GET | `/` | Public | Check server |
 | POST | `/api/auth/signup` | Public | Register user |
+![alt text](image.png)
 | POST | `/api/auth/login` | Public | Login and receive JWT |
+![alt text](image-1.png)
 | GET | `/api/auth/me` | JWT | View authenticated profile |
+
 | GET | `/api/protected` | JWT | Demonstrate protected route |
 | GET | `/api/auth/admin/users` | Admin JWT | List users without password hashes |
 | POST | `/api/notes` | JWT | Create note |
+![alt text](image-3.png)
 | GET | `/api/notes` | JWT | List own notes |
+![alt text](image-2.png)
 | GET | `/api/notes/:id` | JWT | Get one own note |
+![alt text](image-4.png)
 | PUT | `/api/notes/:id` | JWT | Update own note |
 | DELETE | `/api/notes/:id` | JWT | Delete own note |
 
